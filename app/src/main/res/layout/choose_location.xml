@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dialog_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttons_layout" />
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_gravity="start"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored" />
+
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_location"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored" />
+
+    </LinearLayout>
+
+</RelativeLayout>
